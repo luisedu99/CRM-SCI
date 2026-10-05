@@ -1,0 +1,38 @@
+GESTIÓN INTEGRAL — SITIO WEB EDITABLE
+
+Contenido:
+index.html: textos y estructura.
+style.css: diseño personalizado, colores y adaptación a móviles.
+app.js: módulos, galería, capítulos y navegación.
+assets/: capturas, video, portada y subtítulos.
+vendor/: Bootstrap 5.3.8 CSS y JavaScript, con su licencia MIT.
+
+Bootstrap está incluido localmente; no depende de un CDN.
+No requiere base de datos, Node.js ni compilación.
+
+MODIFICAR
+Descomprime el ZIP y abre la carpeta en Visual Studio Code o tu editor.
+Edita index.html para textos generales y app.js para los textos de cada módulo.
+Edita style.css para modificar colores y distribución.
+Conserva las carpetas assets y vendor junto a index.html.
+
+VISTA PREVIA
+Abre index.html para una revisión básica.
+Para probar los recursos con un servidor local, ejecuta en esta carpeta:
+    python -m http.server 8000
+En Windows también puedes usar: py -m http.server 8000
+Abre http://localhost:8000 y detén el servidor con Ctrl+C.
+
+SUBIR A OTRO HOST
+Sube index.html, style.css, app.js, assets/ y vendor/ a la carpeta pública
+de tu dominio (public_html, www o la indicada por tu proveedor).
+index.html debe quedar en la raíz pública. Mantén las rutas y nombres.
+Haz una copia de los archivos existentes antes de reemplazarlos.
+Comprueba el menú, módulos, imágenes y video desde el dominio publicado.
+LEEME.txt es solo una guía y no es necesario para el funcionamiento.
+
+QR
+Si cambias el dominio, genera un QR con la nueva URL antes de imprimir.
+
+La página presenta funciones e interfaces; no incluye el sistema de gestión
+operativo ni su base de datos. El video es un recorrido por capturas.
