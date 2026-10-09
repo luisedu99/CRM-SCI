@@ -1,38 +1,37 @@
-GESTIÓN INTEGRAL — SITIO WEB EDITABLE
+GESTIÓN INTEGRAL - SITIO WEB ACTUALIZADO
 
-Contenido:
-index.html: textos y estructura.
-style.css: diseño personalizado, colores y adaptación a móviles.
-app.js: módulos, galería, capítulos y navegación.
-assets/: capturas, video, portada y subtítulos.
-vendor/: Bootstrap 5.3.8 CSS y JavaScript, con su licencia MIT.
+Incluye la sección del equipo y tarjetas descargables PNG de 1050 x 600 px.
 
-Bootstrap está incluido localmente; no depende de un CDN.
-No requiere base de datos, Node.js ni compilación.
+ARCHIVOS
+index.html: contenido y estructura.
+style.css: estilos y colores.
+app.js: módulos, galería y video.
+team.js: nombres, carnets, enlaces y tarjetas del equipo.
+assets/: imágenes, logo UDB y video.
+vendor/: Bootstrap local y su licencia.
 
-MODIFICAR
-Descomprime el ZIP y abre la carpeta en Visual Studio Code o tu editor.
-Edita index.html para textos generales y app.js para los textos de cada módulo.
-Edita style.css para modificar colores y distribución.
-Conserva las carpetas assets y vendor junto a index.html.
+EDITAR LINKEDIN
+Abre team.js en Visual Studio Code. En teamMembers, completa linkedin: ''
+con el enlace correspondiente, por ejemplo:
+linkedin: 'https://www.linkedin.com/in/usuario'
+Si está vacío, el botón no se muestra. También puedes completar portfolio.
+Los correos se forman con el carnet y @alumno.udb.edu.sv.
 
-VISTA PREVIA
-Abre index.html para una revisión básica.
-Para probar los recursos con un servidor local, ejecuta en esta carpeta:
-    python -m http.server 8000
-En Windows también puedes usar: py -m http.server 8000
-Abre http://localhost:8000 y detén el servidor con Ctrl+C.
+VER EN TU COMPUTADORA
+Extrae el ZIP completo en una carpeta. Abre esa carpeta en Visual Studio Code
+y ejecuta index.html con Live Server. Alternativamente, si tienes Python,
+abres una terminal dentro de la carpeta y ejecutas:
+python -m http.server 8000
+Luego abre http://localhost:8000.
+Usa un servidor local para probar la descarga de tarjetas; abrir mediante
+file:// puede restringir la exportación de imágenes en algunos navegadores.
 
-SUBIR A OTRO HOST
-Sube index.html, style.css, app.js, assets/ y vendor/ a la carpeta pública
-de tu dominio (public_html, www o la indicada por tu proveedor).
-index.html debe quedar en la raíz pública. Mantén las rutas y nombres.
-Haz una copia de los archivos existentes antes de reemplazarlos.
-Comprueba el menú, módulos, imágenes y video desde el dominio publicado.
-LEEME.txt es solo una guía y no es necesario para el funcionamiento.
+SUBIR A UN HOST
+Sube index.html, style.css, app.js, team.js y las carpetas assets y vendor
+a la carpeta pública del hosting, conservando su estructura.
+index.html debe quedar en la raíz pública (por ejemplo public_html).
+No necesitas instalar Node ni compilar: es un sitio estático.
 
-QR
-Si cambias el dominio, genera un QR con la nueva URL antes de imprimir.
-
-La página presenta funciones e interfaces; no incluye el sistema de gestión
-operativo ni su base de datos. El video es un recorrido por capturas.
+El sitio es informativo; no incluye el backend del sistema de gestión.
+El video y las pantallas contienen datos ilustrativos.
+Logo UDB: fuente oficial https://www.udbvirtual.edu.sv/noticia/1
